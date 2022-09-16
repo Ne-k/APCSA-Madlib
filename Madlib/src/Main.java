@@ -70,7 +70,7 @@ public class Main {
                 personName = personName.substring(0, 1).toUpperCase() + personName.substring(1);
 
                 //print the madlib story with all the words
-                System.out.println("Here is your story:\n");
+                System.out.printf("Here is your story %s - %s%n", userName, date);
                 System.out.println(personName + " went to " + place + " on " + date + " to attend " + event + ". " + userName + " was " + adjective + " and " + adverb + " " + verb + " to the event. " + userName + " was " + number + " years old and " + color + " in color. " + userName + " ate " + food + " and drank " + drink + " at the event. " + userName + " had a great time at the " + event + " and went home at " + time + ".");
             }
             case "Q" -> {
