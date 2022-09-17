@@ -1,3 +1,4 @@
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -27,51 +28,50 @@ public class Main {
                 System.out.print("Current date: ");
                 String date = console.next();
 
-
-                System.out.println("Enter a noun: ");
-                String non = console.next();
+                System.out.println("enter a adjective: ");
+                String adjective = console.next();
+                System.out.println("Enter another adjective: ");
+                String adjective2 = console.next();
+                System.out.println("Enter a type of bird: ");
+                String birdType = console.next();
+                System.out.println("Enter a room in a house: ");
+                String roomInHouse = console.next();
+                System.out.println("Enter a verb (past tense): ");
+                String verbPastTense = console.next();
                 System.out.println("Enter a verb: ");
-                String vub = console.next();
-                System.out.println("Enter an adjective: ");
-                String amongus = console.next();
-                System.out.println("Enter an adverb: ");
-                String advub = console.next();
-                System.out.println("Enter an event: ");
-                String event = console.next();
-                System.out.println("Enter a place: ");
-                String place = console.next();
-                System.out.println("Enter a time: ");
-                String time = console.next();
-                System.out.println("Enter a number: ");
-                int number = console.nextInt();
-                System.out.println("Enter a color: ");
-                String color = console.next();
-                System.out.println("Enter a food: ");
-                String somethingYouEat = console.next();
-                System.out.println("Enter a drink: ");
-                String drink = console.next();
-                System.out.println("Enter a person's name: ");
-                String mmmmFunnyPersonsName = console.next();
+                String verb = console.next();
+                System.out.println("Enter a relative's name: ");
+                String relativeName = console.next();
+                System.out.println("Enter a noun: ");
+                String noun = console.next();
+                System.out.println("Enter a liquid: ");
+                String liquid = console.next();
+                System.out.println("Enter a verb ending in -ing: ");
+                String verbEndingInIng = console.next();
+                System.out.println("Enter a part of the body (plural): ");
+                String partOfBodyPlural = console.next();
+                System.out.println("Enter a plural noun: ");
+                String pluralNoun = console.next();
 
-
-                userName = userName.substring(0, 1).toUpperCase() + userName.substring(1);
-                date = date.substring(0, 1).toUpperCase() + date.substring(1);
-                non = non.substring(0, 1).toUpperCase() + non.substring(1);
-                vub = vub.substring(0, 1).toUpperCase() + vub.substring(1);
-                amongus = amongus.substring(0, 1).toUpperCase() + amongus.substring(1);
-                advub = advub.substring(0, 1).toUpperCase() + advub.substring(1);
-                event = event.substring(0, 1).toUpperCase() + event.substring(1);
-                place = place.substring(0, 1).toUpperCase() + place.substring(1);
-                time = time.substring(0, 1).toUpperCase() + time.substring(1);
-                color = color.substring(0, 1).toUpperCase() + color.substring(1);
-                somethingYouEat = somethingYouEat.substring(0, 1).toUpperCase() + somethingYouEat.substring(1);
-                drink = drink.substring(0, 1).toUpperCase() + drink.substring(1);
-                mmmmFunnyPersonsName = mmmmFunnyPersonsName.substring(0, 1).toUpperCase() + mmmmFunnyPersonsName.substring(1);
+                String userNameCapitalized = userName.substring(0, 1).toUpperCase() + userName.substring(1);
+                String adjectiveCapitalized = adjective.substring(0, 1).toUpperCase() + adjective.substring(1);
+                String adjective2Capitalized = adjective2.substring(0, 1).toUpperCase() + adjective2.substring(1);
+                String birdTypeCapitalized = birdType.substring(0, 1).toUpperCase() + birdType.substring(1);
+                String roomInHouseCapitalized = roomInHouse.substring(0, 1).toUpperCase() + roomInHouse.substring(1);
+                String verbPastTenseCapitalized = verbPastTense.substring(0, 1).toUpperCase() + verbPastTense.substring(1);
+                String verbCapitalized = verb.substring(0, 1).toUpperCase() + verb.substring(1);
+                String relativeNameCapitalized = relativeName.substring(0, 1).toUpperCase() + relativeName.substring(1);
+                String nounCapitalized = noun.substring(0, 1).toUpperCase() + noun.substring(1);
+                String liquidCapitalized = liquid.substring(0, 1).toUpperCase() + liquid.substring(1);
+                String verbEndingInIngCapitalized = verbEndingInIng.substring(0, 1).toUpperCase() + verbEndingInIng.substring(1);
+                String partOfBodyPluralCapitalized = partOfBodyPlural.substring(0, 1).toUpperCase() + partOfBodyPlural.substring(1);
+                String pluralNounCapitalized = pluralNoun.substring(0, 1).toUpperCase() + pluralNoun.substring(1);
 
 
                 System.out.printf("Here is your story %s - %s%n", userName, date);
-                // Side note, I didn't know we could use templates so I just used an ai to randomly generate one. have fun.
-                System.out.println(mmmmFunnyPersonsName + " went to " + place + " on " + date + " to attend " + event + " " + userName + " was " + amongus + " and " + advub + " " + vub + " to the event. " + userName + " was " + number + " years old and " + color + " in color. " + userName + " ate " + somethingYouEat + " and drank " + drink + " at the event. " + userName + " had a great time at the " + event + " and went home at " + time + ".");
+
+                // print the story with printf with the capitalized variables
+                System.out.printf("%s: It was %s, cold November day. I woke up to the %s smell of %s roasting in the %s downstairs. I %s down the stairs to see if I could help %s the dinner. My mom said, \"See if %s needs a fresh %s.\"%n So I carried a tray of glasses full of %s into the %s room. When I got there, I couldn't believe my %s! There were %s %s on the %s!%n", userNameCapitalized, date, adjectiveCapitalized, liquidCapitalized, roomInHouseCapitalized, verbCapitalized, relativeNameCapitalized, nounCapitalized, liquidCapitalized, roomInHouseCapitalized, nounCapitalized, adjective2Capitalized, birdTypeCapitalized, nounCapitalized);
             }
             case "Q" -> {
                 System.out.println("You have selected to quit the game.");
