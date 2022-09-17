@@ -54,25 +54,13 @@ public class Main {
                 String pluralNoun = console.next();
 
                 String userNameCapitalized = userName.substring(0, 1).toUpperCase() + userName.substring(1);
-                String adjectiveCapitalized = adjective.substring(0, 1).toUpperCase() + adjective.substring(1);
-                String adjective2Capitalized = adjective2.substring(0, 1).toUpperCase() + adjective2.substring(1);
-                String birdTypeCapitalized = birdType.substring(0, 1).toUpperCase() + birdType.substring(1);
-                String roomInHouseCapitalized = roomInHouse.substring(0, 1).toUpperCase() + roomInHouse.substring(1);
-                String verbPastTenseCapitalized = verbPastTense.substring(0, 1).toUpperCase() + verbPastTense.substring(1);
-                String verbCapitalized = verb.substring(0, 1).toUpperCase() + verb.substring(1);
-                String relativeNameCapitalized = relativeName.substring(0, 1).toUpperCase() + relativeName.substring(1);
-                String nounCapitalized = noun.substring(0, 1).toUpperCase() + noun.substring(1);
-                String liquidCapitalized = liquid.substring(0, 1).toUpperCase() + liquid.substring(1);
-                String verbEndingInIngCapitalized = verbEndingInIng.substring(0, 1).toUpperCase() + verbEndingInIng.substring(1);
-                String partOfBodyPluralCapitalized = partOfBodyPlural.substring(0, 1).toUpperCase() + partOfBodyPlural.substring(1);
-                String pluralNounCapitalized = pluralNoun.substring(0, 1).toUpperCase() + pluralNoun.substring(1);
-
 
                 System.out.printf("Here is your story %s - %s%n", userName, date);
 
-                // print the story with printf with the capitalized variables
-                System.out.printf("%s: It was %s, cold November day. I woke up to the %s smell of %s roasting in the %s downstairs. I %s down the stairs to see if I could help %s the dinner. My mom said, \"See if %s needs a fresh %s.\"%n So I carried a tray of glasses full of %s into the %s room. When I got there, I couldn't believe my %s! There were %s %s on the %s!%n", userNameCapitalized, date, adjectiveCapitalized, liquidCapitalized, roomInHouseCapitalized, verbCapitalized, relativeNameCapitalized, nounCapitalized, liquidCapitalized, roomInHouseCapitalized, nounCapitalized, adjective2Capitalized, birdTypeCapitalized, nounCapitalized);
-            }
+                //print out the story with the capitalized words created above for all the user inputs
+                System.out.printf("%s: It was a %s, cold November day. I woke up to the %s smell of %s roasting in the %s downstairs. I %s down the stairs to see if I could help %s the dinner. My mom said, \"See if %s needs a fresh %s.\" So I carried a tray of glasses full of %s into the %s room. When I got there, I couldn't believe my %s! There were %s %s on the %s!%n", userNameCapitalized, adjective, adjective2, birdType, roomInHouse, verbPastTense, relativeName, verb, noun, liquid, roomInHouse, partOfBodyPlural, pluralNoun, verbEndingInIng, roomInHouse);
+
+                }
             case "Q" -> {
                 System.out.println("You have selected to quit the game.");
                 System.exit(0);
