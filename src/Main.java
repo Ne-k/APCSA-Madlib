@@ -20,20 +20,20 @@ public class Main {
 
                 System.out.println("Please enter the following to create a story:\n");
 
-                // Ask for the user's name
+
                 System.out.print("Your name: ");
                 String userName = console.next();
-                //Ask for current date
+
                 System.out.print("Current date: ");
                 String date = console.next();
 
-                // Start asking for words for the story
+
                 System.out.println("Enter a noun: ");
                 String noun = console.next();
                 System.out.println("Enter a verb: ");
                 String verb = console.next();
                 System.out.println("Enter an adjective: ");
-                String adjective = console.next();
+                String amongus = console.next();
                 System.out.println("Enter an adverb: ");
                 String adverb = console.next();
                 System.out.println("Enter an event: ");
@@ -47,31 +47,31 @@ public class Main {
                 System.out.println("Enter a color: ");
                 String color = console.next();
                 System.out.println("Enter a food: ");
-                String food = console.next();
+                String somethingYouEat = console.next();
                 System.out.println("Enter a drink: ");
                 String drink = console.next();
                 System.out.println("Enter a person's name: ");
-                String personName = console.next();
+                String mmmmFunnyPersonsName = console.next();
 
 
-                // capitalize the first letter of each word provided and override it
                 userName = userName.substring(0, 1).toUpperCase() + userName.substring(1);
                 date = date.substring(0, 1).toUpperCase() + date.substring(1);
                 noun = noun.substring(0, 1).toUpperCase() + noun.substring(1);
                 verb = verb.substring(0, 1).toUpperCase() + verb.substring(1);
-                adjective = adjective.substring(0, 1).toUpperCase() + adjective.substring(1);
+                amongus = amongus.substring(0, 1).toUpperCase() + amongus.substring(1);
                 adverb = adverb.substring(0, 1).toUpperCase() + adverb.substring(1);
                 event = event.substring(0, 1).toUpperCase() + event.substring(1);
                 place = place.substring(0, 1).toUpperCase() + place.substring(1);
                 time = time.substring(0, 1).toUpperCase() + time.substring(1);
                 color = color.substring(0, 1).toUpperCase() + color.substring(1);
-                food = food.substring(0, 1).toUpperCase() + food.substring(1);
+                somethingYouEat = somethingYouEat.substring(0, 1).toUpperCase() + somethingYouEat.substring(1);
                 drink = drink.substring(0, 1).toUpperCase() + drink.substring(1);
-                personName = personName.substring(0, 1).toUpperCase() + personName.substring(1);
+                mmmmFunnyPersonsName = mmmmFunnyPersonsName.substring(0, 1).toUpperCase() + mmmmFunnyPersonsName.substring(1);
 
-                //print the madlib story with all the words
+
                 System.out.printf("Here is your story %s - %s%n", userName, date);
-                System.out.println(personName + " went to " + place + " on " + date + " to attend " + event + " " + userName + " was " + adjective + " and " + adverb + " " + verb + " to the event. " + userName + " was " + number + " years old and " + color + " in color. " + userName + " ate " + food + " and drank " + drink + " at the event. " + userName + " had a great time at the " + event + " and went home at " + time + ".");
+                // Side note, I didn't know we could use templates so I just used an ai to randomly generate one. have fun.
+                System.out.println(mmmmFunnyPersonsName + " went to " + place + " on " + date + " to attend " + event + " " + userName + " was " + amongus + " and " + adverb + " " + verb + " to the event. " + userName + " was " + number + " years old and " + color + " in color. " + userName + " ate " + somethingYouEat + " and drank " + drink + " at the event. " + userName + " had a great time at the " + event + " and went home at " + time + ".");
             }
             case "Q" -> {
                 System.out.println("You have selected to quit the game.");
