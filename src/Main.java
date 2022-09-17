@@ -29,13 +29,13 @@ public class Main {
 
 
                 System.out.println("Enter a noun: ");
-                String noun = console.next();
+                String non = console.next();
                 System.out.println("Enter a verb: ");
-                String verb = console.next();
+                String vub = console.next();
                 System.out.println("Enter an adjective: ");
                 String amongus = console.next();
                 System.out.println("Enter an adverb: ");
-                String adverb = console.next();
+                String advub = console.next();
                 System.out.println("Enter an event: ");
                 String event = console.next();
                 System.out.println("Enter a place: ");
@@ -56,10 +56,10 @@ public class Main {
 
                 userName = userName.substring(0, 1).toUpperCase() + userName.substring(1);
                 date = date.substring(0, 1).toUpperCase() + date.substring(1);
-                noun = noun.substring(0, 1).toUpperCase() + noun.substring(1);
-                verb = verb.substring(0, 1).toUpperCase() + verb.substring(1);
+                non = non.substring(0, 1).toUpperCase() + non.substring(1);
+                vub = vub.substring(0, 1).toUpperCase() + vub.substring(1);
                 amongus = amongus.substring(0, 1).toUpperCase() + amongus.substring(1);
-                adverb = adverb.substring(0, 1).toUpperCase() + adverb.substring(1);
+                advub = advub.substring(0, 1).toUpperCase() + advub.substring(1);
                 event = event.substring(0, 1).toUpperCase() + event.substring(1);
                 place = place.substring(0, 1).toUpperCase() + place.substring(1);
                 time = time.substring(0, 1).toUpperCase() + time.substring(1);
@@ -71,7 +71,7 @@ public class Main {
 
                 System.out.printf("Here is your story %s - %s%n", userName, date);
                 // Side note, I didn't know we could use templates so I just used an ai to randomly generate one. have fun.
-                System.out.println(mmmmFunnyPersonsName + " went to " + place + " on " + date + " to attend " + event + " " + userName + " was " + amongus + " and " + adverb + " " + verb + " to the event. " + userName + " was " + number + " years old and " + color + " in color. " + userName + " ate " + somethingYouEat + " and drank " + drink + " at the event. " + userName + " had a great time at the " + event + " and went home at " + time + ".");
+                System.out.println(mmmmFunnyPersonsName + " went to " + place + " on " + date + " to attend " + event + " " + userName + " was " + amongus + " and " + advub + " " + vub + " to the event. " + userName + " was " + number + " years old and " + color + " in color. " + userName + " ate " + somethingYouEat + " and drank " + drink + " at the event. " + userName + " had a great time at the " + event + " and went home at " + time + ".");
             }
             case "Q" -> {
                 System.out.println("You have selected to quit the game.");
