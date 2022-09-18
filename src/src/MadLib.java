@@ -1,9 +1,5 @@
-package com.MadLib;
-
 import java.io.IOException;
 import java.util.Scanner;
-import com.MadLib.JsonHelper;
-import org.json.JSONObject;
 
 
 public class MadLib {
@@ -15,7 +11,7 @@ public class MadLib {
         System.out.print("I will ask you to provide various words ");
         System.out.println("and phrases to fill a story.");
         System.out.println("The full story will be printed out at the end.\n");
-        System.out.println("(C)reate Madlib, (Q)uit, or do you want to hear a (J)oke?");
+        System.out.println("(C)reate Madlib, (Q)uit");
 
         // Get the user's choice
         String choice = console.next();
@@ -68,13 +64,6 @@ public class MadLib {
             case "Q" -> {
                 System.out.println("You have selected to quit the game.");
                 System.exit(0);
-            }
-            case "J" -> {
-                String joke;
-                JSONObject json = JsonHelper.mmmJsonYummu("https://official-joke-api.appspot.com/random_joke");
-                joke = json.getString("setup") + " " + json.getString("punchline");
-                System.out.println(joke + "\n-----------------------------------");
-
             }
             default -> System.out.println("Invalid choice!");
         }
