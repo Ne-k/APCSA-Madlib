@@ -1,8 +1,12 @@
+package com.MadLib;
 
 import java.io.IOException;
 import java.util.Scanner;
+import com.MadLib.JsonHelper;
+import org.json.JSONObject;
 
-public class Main {
+
+public class MadLib {
     public static void main(String[] args) throws IOException, InterruptedException {
         Scanner console = new Scanner(System.in);
 
@@ -11,7 +15,7 @@ public class Main {
         System.out.print("I will ask you to provide various words ");
         System.out.println("and phrases to fill a story.");
         System.out.println("The full story will be printed out at the end.\n");
-        System.out.println("(C)reate Madlib, (Q)uit?");
+        System.out.println("(C)reate Madlib, (Q)uit, or do you want to hear a (J)oke?");
 
         // Get the user's choice
         String choice = console.next();
@@ -60,14 +64,19 @@ public class Main {
                 //print out the story with the capitalized words created above for all the user inputs
                 System.out.printf("%s: It was a %s, cold November day. I woke up to the %s smell of %s roasting in the %s downstairs. I %s down the stairs to see if I could help %s the dinner. My mom said, \"See if %s needs a fresh %s.\" So I carried a tray of glasses full of %s into the %s room. When I got there, I couldn't believe my %s! There were %s %s on the %s!%n", userNameCapitalized, adjective, adjective2, birdType, roomInHouse, verbPastTense, relativeName, verb, noun, liquid, roomInHouse, partOfBodyPlural, pluralNoun, verbEndingInIng, roomInHouse);
 
-                }
+            }
             case "Q" -> {
                 System.out.println("You have selected to quit the game.");
                 System.exit(0);
             }
+            case "J" -> {
+                String joke;
+                JSONObject json = JsonHelper.mmmJsonYummu("https://official-joke-api.appspot.com/random_joke");
+                joke = json.getString("setup") + " " + json.getString("punchline");
+                System.out.println(joke);
+
+            }
             default -> System.out.println("Invalid choice!");
         }
     }
-
-
 }
