@@ -73,7 +73,7 @@ public class MadLib {
                 String joke;
                 JSONObject json = JsonHelper.mmmJsonYummu("https://official-joke-api.appspot.com/random_joke");
                 joke = json.getString("setup") + " " + json.getString("punchline");
-                System.out.println(joke);
+                System.out.println(joke + "\n-----------------------------------");
 
             }
             default -> System.out.println("Invalid choice!");
