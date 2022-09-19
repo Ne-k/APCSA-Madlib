@@ -1,6 +1,7 @@
 package com.MadLib;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.Scanner;
 import com.MadLib.JsonHelper;
 import org.json.JSONObject;
@@ -28,7 +29,7 @@ public class MadLib {
                 String userName = console.next();
 
                 System.out.print("Current date: ");
-                String date = console.next();
+                int date = console.nextInt();
 
                 System.out.println("enter a adjective: ");
                 String adjective = console.next();
