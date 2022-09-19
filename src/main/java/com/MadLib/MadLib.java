@@ -28,10 +28,13 @@ public class MadLib {
                 System.out.print("Your name: ");
                 String userName = console.next();
 
-                System.out.print("Current date: ");
+                System.out.println("Enter the current date: ");
+                // get current date as an int
                 int date = console.nextInt();
+                // clear buffer
+                console.nextLine();
 
-                System.out.println("enter a adjective: ");
+                System.out.println("Enter a adjective: ");
                 String adjective = console.next();
                 System.out.println("Enter another adjective: ");
                 String adjective2 = console.next();
@@ -60,7 +63,7 @@ public class MadLib {
 
                 System.out.printf("Here is your generated story %s - %s%n%n", userNameCapitalized, date);
 
-                System.out.printf("It was a %s, cold November day. I woke up to the %s smell of %s roasting in the %s downstairs. I %s down the stairs to see if I could help %s the dinner.\n My mom said, \"See if %s needs a fresh %s.\" So I carried a tray of glasses full of %s into the %s room. When I got there, I couldn't believe my %s! There were %s %s on the %s!%n", adjective, adjective2, birdType, roomInHouse, verbPastTense, relativeName, verb, noun, liquid, roomInHouse, partOfBodyPlural, pluralNoun, verbEndingInIng, roomInHouse);
+                System.out.printf("It was a %s, cold November day. I woke up to the %s smell of %s roasting in the %s downstairs.\nI %s down the stairs to see if I could help %s the dinner.\nMy mom said, \"See if %s needs a fresh %s.\"\nSo I carried a tray of glasses full of %s into the %s room.\nWhen I got there, I couldn't believe my %s!\nThere were %s %s on the %s!%n", adjective, adjective2, birdType, roomInHouse, verbPastTense, relativeName, verb, noun, liquid, roomInHouse, partOfBodyPlural, pluralNoun, verbEndingInIng, roomInHouse);
 
             }
             case "Q" -> {
