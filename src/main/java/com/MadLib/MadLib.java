@@ -60,7 +60,7 @@ public class MadLib {
 
                 System.out.printf("Here is your story %s - %s%n", userName, date);
 
-                System.out.printf("%s: It was a %s, cold November day. I woke up to the %s smell of %s roasting in the %s downstairs. I %s down the stairs to see if I could help %s the dinner. My mom said, \"See if %s needs a fresh %s.\" So I carried a tray of glasses full of %s into the %s room. When I got there, I couldn't believe my %s! There were %s %s on the %s!%n", userNameCapitalized, adjective, adjective2, birdType, roomInHouse, verbPastTense, relativeName, verb, noun, liquid, roomInHouse, partOfBodyPlural, pluralNoun, verbEndingInIng, roomInHouse);
+                System.out.printf("It was a %s, cold November day. I woke up to the %s smell of %s roasting in the %s downstairs. I %s down the stairs to see if I could help %s the dinner.\n My mom said, \"See if %s needs a fresh %s.\" So I carried a tray of glasses full of %s into the %s room. When I got there, I couldn't believe my %s! There were %s %s on the %s!%n", adjective, adjective2, birdType, roomInHouse, verbPastTense, relativeName, verb, noun, liquid, roomInHouse, partOfBodyPlural, pluralNoun, verbEndingInIng, roomInHouse);
 
             }
             case "Q" -> {
