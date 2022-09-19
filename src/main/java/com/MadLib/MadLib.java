@@ -17,9 +17,7 @@ public class MadLib {
         System.out.println("The full story will be printed out at the end.\n");
         System.out.println("(C)reate Madlib, (Q)uit, or do you want to hear a (J)oke?");
 
-        // Get the user's choice
         String choice = console.next();
-        // Create a switch statement to handle the user's choice
         switch (choice) {
             case "C" -> {
 
@@ -61,7 +59,6 @@ public class MadLib {
 
                 System.out.printf("Here is your story %s - %s%n", userName, date);
 
-                //print out the story with the capitalized words created above for all the user inputs
                 System.out.printf("%s: It was a %s, cold November day. I woke up to the %s smell of %s roasting in the %s downstairs. I %s down the stairs to see if I could help %s the dinner. My mom said, \"See if %s needs a fresh %s.\" So I carried a tray of glasses full of %s into the %s room. When I got there, I couldn't believe my %s! There were %s %s on the %s!%n", userNameCapitalized, adjective, adjective2, birdType, roomInHouse, verbPastTense, relativeName, verb, noun, liquid, roomInHouse, partOfBodyPlural, pluralNoun, verbEndingInIng, roomInHouse);
 
             }
